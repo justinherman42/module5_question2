@@ -33,7 +33,7 @@ var tabulate = function (data,columns) {
   return table;
 }
 
-d3.csv('presidents.csv')
+d3.csv('https://raw.githubusercontent.com/justinherman42/module5_question2/master/presidents.csv')
   .then(function(data) {
 	var columns = ['Name','Height','Weight']
   tabulate(data,columns)
